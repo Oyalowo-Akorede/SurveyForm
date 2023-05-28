@@ -1,44 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-:root{
-  --color-white:#f3f3f3;
-  --color-darkblue:#796ec8;
-  --color-darkblue-alpha: rgb(13,138,187);
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #796ec8;
+  --color-darkblue-alpha: rgb(13, 138, 187);
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* Y d "*,*" tho ? */
-body{
-  font-family: sans-serif,Arial, Helvetica;
-  font-size: 1rem;
-  font-weight: 400;
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
   line-height: 1.4;
   margin: 10%;
 }
 
-#description{
- text-align: center;
+#description {
+  text-align: center;
 }
 
-form{
+form {
   background: var(--color-darkblue-alpha);
   border-radius: 1.25rem;
-  padding: 1.8rem 1rem;
-  border: none;
-  margin:3.125rem auto 0 auto;
-  width: 100%;
-  color: white;
+  padding: 2rem;
+  margin: 3.125rem auto 0 auto;
   display: flex;
-    flex-direction: column;
-    gap: 10px;
-  
+  flex-direction: column;
+  gap: 15px;
+  width:75%;
 }
 
-body::before{
-  content: '';
+body::before {
+  content: "";
   position: fixed;
   background-image: url("./coders-companies-blog.jpg");
   background-size: cover;
@@ -52,188 +47,61 @@ body::before{
   z-index: -1;
 }
 
-#title{
-  font-weight: 600;
+#title {
+  font-weight: 400;
   font-size: 4rem;
   color: black;
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1 rem;
   text-align: center;
-  /* text-shadow:2px 2px 2px #ffffff; */
+  text-shadow:2px 2px 2px var(--color-darkblue-alpha);
 }
 
-#description{
+#description {
   font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgb(0,0,4);
-}
-
-h1{
-  font-weight: 400;
-  line-height: 1.2;
-  
-}
-
-p{
+  font-weight: 50;
   font-size: 1.125rem;
 }
 
-h1,p{
-  margin-block: 0 ,0.5rem;
-}
-
-label{
+label {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
-  margin-top: 0.5rem;
-
+  margin-block: 0.5rem;
 }
 
-input ,select ,button ,textarea{
+input,
+select,
+button,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin-right: 20px;
+}
 
-}
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea
-{
-  width:100%;
-  
-}
-.intro{
-  width: 100%;
-  margin:3.125rem auto 0 auto;
-  border:0;
+.intro {
+  margin: 3.125rem auto 0 auto;
+  border: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-fieldset{
+fieldset {
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
   border:none;
-  padding-bottom: 15px;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    background-color: #c0bfbf;
-    background-image: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-  } 
-
-.Intro{
-  background-color: aquamarine;
-  border-radius: 7px;
-
-}
-
-#title {
-  text-align: center;
-  font-size: 36px;
-  margin-top: 50px;
-  padding: 0%;
-  background-color: rgb(6, 197, 79);
-}
-
-#description {
-  text-align: center;
-  margin-top: 20px;
-  background-color: rgb(243, 0, 0);
-}
-
-  
-label {
-  display:inline-flex;
+.fbck{
+  display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  background-color: rgb(10, 0, 145);
+  align-items: stretch;
 }
 
-#survey-form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #15ff00;
-  border-radius: 10px;
+#submit{
+  max-width: 15%;
 }
-
-.role{
-  background-color: rgb(160, 160, 11);
-  padding: 20px;
-}
-.refer{
-  background-color: blueviolet;
-  border-radius: 7px;
-  padding: 20px;
-}
-
-
-.fav{
-  background-color: rgb(182, 65, 18);
-  border-radius: 7px;
-  padding: 20px;
-}
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="number"],
-  select,
-  textarea {
-    width:100%;
-
-  } */
